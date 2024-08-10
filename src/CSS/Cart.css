@@ -1,0 +1,113 @@
+.cart>h1{
+    font-size: 40px;
+}
+.cart .box ,.orderBox .prodDetails{
+    display: grid;
+    grid-template-columns: 10vw 44vw;
+    grid-gap: 50px;
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    z-index: -1;
+}
+.cart .buttons, .querycont .buttons,.prodView .buttons, .orderBox .prodDetails .buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 20px 0;
+    width: 300px;
+}
+.cart .col{
+    display: flex;
+    flex-direction: column;
+}
+.cart .box img, .orderBox .prodDetails img{
+    width: 10vw;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.bill{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 40vw;
+    border: 1px solid black;
+    background-color: white;
+}
+.cart{
+    position: relative;
+
+}
+.bill h1{
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+.bill .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.bill h3{
+    padding: 20px 20px;
+}
+.bill p{
+    padding: 5px 20px;
+}
+.bill h4{
+    padding: 0px 20px;
+    font-size: 17px;
+}
+.bill .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill h4 span:first-child{
+    text-decoration: line-through;
+}
+.bill h4 span:last-child{
+    color: green;
+}
+.bill .placeOrder{
+    margin: 0px 20px;
+    font-size: 17px;
+    padding: 12px;
+    background-color: orange;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.bill .placeOrder:hover{
+    border: 2px solid white;
+}
+@media screen and (max-width:431px) {
+    .bill{
+        position: static;
+        width: 100%;
+    }
+    .cart .box{
+        grid-template-columns: 30vw 58vw;
+    }
+    .cart .buttons{
+        width: auto;
+    }
+    .cart .box img{
+        width: 30vw;
+        margin: auto 0;
+    }
+    .bill .row{
+        position: fixed;
+        bottom: 40px;
+        background-color: white;
+        border: 1px solid black;
+        width: 100%;
+    }
+    .cart{
+        margin-bottom: 100px;
+    }
+}

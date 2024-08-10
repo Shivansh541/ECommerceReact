@@ -1,0 +1,138 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup form, .orderBox .newAddress form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 40%;
+}
+
+.signup input,
+.signup select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: none;
+    color: white;
+    outline: none;
+}
+.signup ::placeholder{
+    color: rgb(163, 161, 161);
+}
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+    width: 100%;
+}
+
+.signup select {
+    width: 103%;
+    background-color: black;
+}
+
+.signup h1 {
+    font-size: 35px;
+    color: white;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px 12px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+.signup .btn{
+    border: 2px solid white;
+}
+.signup .btn:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(9, 0, 128);
+}
+.h1{
+    color: red;
+}
+.gender{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    border-radius: 5px;
+    width: 104%;
+    padding: 4px 0px;
+}
+.pass{
+    position: relative;
+}
+.pass i{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    cursor: pointer;
+}
+.gender {
+    margin-bottom: 10px;
+}
+/* Custom styling for radio buttons */
+.gender input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Custom styling for checked radio buttons */
+.gender input[type="radio"]:checked {
+    background-color: #007bff;
+}
+
+/* Hide default radio button */
+.gender input[type="radio"]::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #007bff;
+    visibility: hidden;
+}
+
+/* Show custom radio button when checked */
+.gender input[type="radio"]:checked::before {
+    visibility: visible;
+}
+.login::before,.signup::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('/public/Background/vecteezy_fingerprint-identity-sensor-data-protection-system-podium_7164537.jpg') no-repeat center center/cover rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    background-blend-mode: multiply;
+}
+@media screen and (max-width:431px) {
+    .signup form{
+        width: 70%;
+    }
+}

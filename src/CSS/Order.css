@@ -1,0 +1,93 @@
+
+.orderBox .cart>h1,.orderBox .address h1,.orderBox .newAddress>h1{
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+.orderBox .address p{
+    font-size: 18px;
+    padding: 5px;
+}
+.orderBox .newAddress{
+
+    transition: all 1s ease;
+    display: none;
+}
+.orderBox .newAddress.show{
+    transition: all 1s ease;
+    display: block;
+}
+
+.orderBox .signup{
+    align-items: start;
+}
+.orderBox .cart{
+    transition: all 1s ease;
+    display: none;
+}
+.orderBox .cart.show{
+    transition: all 1s ease;
+    display: block;
+}
+.orderBox .address{
+  border-bottom: 2px solid black;
+  padding: 0px 20px;
+}
+.orderBox .address .confirm{
+  display: flex;
+  justify-content: space-evenly;
+  width: 130px;
+}
+.orderBox .address .confirm input{
+  border: 2px solid black;
+
+}
+.orderBox .success{
+    transition: all 1s ease;
+    display: none;
+}
+.success.show {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #dff0d8;
+    border: 1px solid #d0e9c6;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+  
+  .success h1 {
+    margin-top: 0;
+    color: #3c763d;
+    font-size: 40px;
+  }
+  
+  .success p {
+    margin: 10px 0;
+  }
+  
+  .success a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .success a:hover {
+    color: #0056b3;
+  }
+  
+  .success i {
+    font-size: 70px;
+    color: #28a745; /* Green color for the checkmark icon */
+    margin-right: 5px; /* Add some spacing between the icon and text */
+  }
+  .inline p{
+    display: inline-block;
+  }
+  .orderBox{
+    position: relative;
+  }
+  .orderBox .cart{
+    margin-bottom: 0;
+  }

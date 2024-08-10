@@ -1,0 +1,75 @@
+.contact a img{
+    height: 50px;
+}
+.contact form,.contact{
+    padding: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98.5%;
+    background: none;
+}
+
+.contact form{
+    width: 33%;
+}
+.contact input,.contact textarea{
+    padding: 5px;
+    font-size: 17px;
+    color: black;
+    border-radius: 5px;
+    background: none;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+
+    border: 2px solid black;
+}
+.contact input{
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+.contact ::placeholder{
+    color: rgb(50, 47, 47);
+}
+.contact h1{
+    color: black;
+    font-size: 40px;
+    border-bottom: 2px solid black;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 104vh;
+    width: 100%;
+    background: url('/public/Background/contact.jpg') rgb(0, 0, 0,0.3) no-repeat center center/cover; 
+    background-blend-mode: multiply;
+    z-index: -1;
+}
+.contact .links{
+    padding: 15px 5px;
+    width: 33%;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:431px) {
+    .contact{
+        width: auto;
+    }
+    .contact>h1{
+        font-size: 30px;
+    }
+    .contact form{
+        width: 60%;
+    }
+    .contact .links{
+        width: 60%;
+    }
+    .contact::before{
+        height: 120vh;
+    }
+}

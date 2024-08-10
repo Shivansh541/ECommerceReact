@@ -1,0 +1,114 @@
+.account .buttons a{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+}
+.buttons a:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+}
+.account .btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 2px solid white;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+}
+.account .buttons{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin: 20px 0;
+    grid-gap: 20px;
+}
+.account h1{
+    font-size: 35px;
+}
+.account{
+    padding: 0px 20px;
+}
+.account .info p{
+    padding: 10px 10px;
+    margin: 10px 0px;
+    display: inline-block;
+    font-size: 17px;
+    border: 0.5px solid #ccc;
+    background-color: whitesmoke;
+    width: 300px;
+}
+.addresses .name{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 5px 0px;
+}
+.addresses .address{
+    border: 1px solid black;
+    padding: 15px;
+    position: relative;
+}
+.addresses .dots{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.addresses .dots p{
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+.addresses .box p{
+    padding: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.addresses .box::before{
+    content: "";
+    height: 20px;
+    position: absolute;
+    width: 30px;
+    border-radius: 200px;
+    right: -20px;
+    cursor: pointer;
+}
+.addresses .box{
+    position: absolute;
+    right: 24px;
+    top: 10px;
+    padding: 0px 8px;
+    border: 0.2px solid black;
+    display: none;
+}
+.addresses .box.show{
+    display: block;
+}
+@media screen and (max-width:431px) {
+    .account .buttons{
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+.prodView{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.prodView img{
+    /* width: auto; */
+    height: 94vh;
+    border: 1px solid rgb(72, 65, 65);
+    border-radius: 10px;
+}
+.prodView div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.prodView h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .prodView p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .prodView h3 {
+    font-size: 20px;
+  }
+  .prodView .price {
+    color: #ff6347; 
+    font-size: 16px;
+    text-decoration: line-through;/* Or any other color you prefer for the price */
+  }
+  
+  .prodView span {
+    color: #008000; /* Or any other color you prefer for the discount */
+  }
+  @media screen and (max-width:431px) {
+    .prodView{
+      display: flex;
+      flex-direction: column;
+    }
+    .prodView  img{
+      height: auto;
+      width: 94vw;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    .prodView .qty{
+      padding: 0;
+    }
+  }
+  

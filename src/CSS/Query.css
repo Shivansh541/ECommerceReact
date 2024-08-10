@@ -1,0 +1,78 @@
+ .querycont {
+    display: grid;
+    grid-template-columns: 340px 340px 340px 340px;
+    grid-gap: 30px;
+    padding: 20px;
+}   
+.querycont .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(75, 64, 64);
+    border-radius: 10px;
+    padding: 20px;
+}
+ .querycont .box img {
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+ .querycont .box h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+ .querycont .box p {
+    margin-bottom: 10px;
+}
+
+ .querycont .box h3 {
+    font-size: 16px;
+}
+
+ .querycont .box h3 span:last-child {
+    color: green;
+}
+ .querycont .box h3{
+    font-size: 22px;
+}
+ .querycont .box .price{
+    font-size: 17px;
+    color: red;
+    text-decoration: line-through;
+}
+.querycont .box a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:431px) {
+    .querycont{
+        grid-template-columns: 195px 195px;
+        grid-gap: 0;
+    }
+    .querycont .box{
+        border-radius: 0;
+        padding: 10px;
+    }
+    .querycont .box img{
+        width: 150px;
+    }
+    .querycont .box img{
+        width: 150px;
+    }
+    .querycont .box h1{
+        font-size: 13px;
+    }
+    .querycont .box h3{
+        font-size: 17px;
+    }
+    .querycont .box .price{
+        font-size: 12px;
+    }
+    .querycont .box h3 span:last-child{
+        display: block;
+    }
+}

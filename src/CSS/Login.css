@@ -1,0 +1,82 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login::before{
+    height: 147vh;
+  }
+  .login form {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin: 20px;
+    width: 50%;
+    background: none;
+  }
+  .login .btn{
+    background-color: black;
+    padding: 9px 15px;
+    margin: 0px 20px;
+    font-size: 13px;
+    border: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+  }
+  .login .btn:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+  }
+  .login a{
+    background-color: black;
+    margin: 0px 20px;
+    color: white;
+    padding: 7px 15px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  .login a:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+  }
+  .login input {
+    margin-bottom: 10px;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+  }
+  .login input[type="text"],
+  .login input[type="email"],
+  .login input[type="password"] {
+    width: 100%;
+  }
+  .login h1{
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+  }
+  .login .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  @media screen and (max-width:431px) {
+    .login form{
+      width: 70%;
+    }
+  }
